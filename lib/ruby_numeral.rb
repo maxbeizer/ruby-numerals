@@ -1,0 +1,2 @@
+class RubyNumeral
+end
