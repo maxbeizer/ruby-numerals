@@ -6,6 +6,6 @@ class RubyNumeral
   end
 
   def convert
-    string == '1' ? 'I' : 'II'
+    'I' * string.to_i
   end
 end

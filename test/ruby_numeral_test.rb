@@ -10,6 +10,10 @@ class TestRubyNumeral < Minitest::Test
     assert_equal convert('2'), 'II'
   end
 
+  def test_to_roman_3
+    assert_equal convert('3'), 'III'
+  end
+
   private
     def convert(str)
       RubyNumeral.new(str).convert
