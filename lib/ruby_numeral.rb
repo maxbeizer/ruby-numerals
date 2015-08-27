@@ -1,7 +1,8 @@
 class RubyNumeral
   ARABIC_TO_ROMAN_MAP = {
     '4' => 'IV',
-    '5' => 'V'
+    '5' => 'V',
+    '6' => 'VI'
   }
 
   attr_reader :string
