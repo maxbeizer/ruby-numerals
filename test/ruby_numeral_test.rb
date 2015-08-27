@@ -14,6 +14,11 @@ class TestRubyNumeral < Minitest::Test
     assert_equal convert('3'), 'III'
   end
 
+  def test_to_roman_4
+    assert_equal convert('4'), 'IV'
+  end
+
+
   private
     def convert(str)
       RubyNumeral.new(str).convert
