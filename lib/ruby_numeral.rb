@@ -1,7 +1,8 @@
 class RubyNumeral
   ARABIC_TO_ROMAN_MAP = {
     '4' => 'IV',
-    '5' => 'V'
+    '5' => 'V',
+    '9' => 'IX'
   }
 
   attr_accessor :string_to_return,
@@ -17,6 +18,7 @@ class RubyNumeral
     when current_string == '0' then string_to_return
     when current_string == '4' then set_return_and_recurse(current_string, integer(current_string), get_from_map(current_string))
     when current_string == '5' then set_return_and_recurse(current_string, integer(current_string), get_from_map(current_string))
+    when current_string == '9' then set_return_and_recurse(current_string, integer(current_string), get_from_map(current_string))
     when greater_than_five?(current_string) then set_return_and_recurse(current_string, 5, 'V')
     else set_return_and_recurse(current_string, 1, 'I')
     end

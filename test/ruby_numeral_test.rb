@@ -34,6 +34,9 @@ class TestRubyNumeral < Minitest::Test
     assert_equal 'VIII', convert('8')
   end
 
+  def test_to_roman_9
+    assert_equal 'IX', convert('9')
+  end
 
   private
   def convert(str)
