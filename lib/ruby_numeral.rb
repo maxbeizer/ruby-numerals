@@ -1,6 +1,7 @@
 class RubyNumeral
   ARABIC_TO_ROMAN_MAP = {
-    '4' => 'IV'
+    '4' => 'IV',
+    '5' => 'V'
   }
 
   attr_reader :string
@@ -10,11 +11,7 @@ class RubyNumeral
   end
 
   def convert
-    if integer < 4
-      'I' * integer
-    else
-      ARABIC_TO_ROMAN_MAP[string]
-    end
+    ARABIC_TO_ROMAN_MAP.fetch(string) { 'I' * integer }
   end
 
   private

@@ -18,6 +18,9 @@ class TestRubyNumeral < Minitest::Test
     assert_equal convert('4'), 'IV'
   end
 
+  def test_to_roman_5
+    assert_equal convert('5'), 'V'
+  end
 
   private
     def convert(str)
