@@ -27,7 +27,7 @@ class TestRubyNumeral < Minitest::Test
   end
 
   private
-    def convert(str)
-      RubyNumeral.new(str).convert
-    end
+  def convert(str)
+    RubyNumeral.new(str).convert
+  end
 end

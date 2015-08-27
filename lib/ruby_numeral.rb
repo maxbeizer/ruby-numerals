@@ -16,7 +16,7 @@ class RubyNumeral
   end
 
   private
-    def integer
-      string.to_i
-    end
+  def integer
+    string.to_i
+  end
 end
